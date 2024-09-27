@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about.html", (req, res) => {
-  res.send("about");
+  res.render("about");
 });
 app.get("/contact", (req, res) => {
   res.send("Contact Us");
