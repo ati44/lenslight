@@ -1,7 +1,13 @@
 import express from "express";
+import dotenv from "dotenv";
+import conn from "./db.js";
+
+dotenv.config();
+
+conn(); // Call the function conn() from db.js
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 //ejs template engine
 
